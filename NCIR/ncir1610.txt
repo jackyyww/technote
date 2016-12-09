@@ -1,0 +1,21 @@
+[introduction]
+	[Introduction to Titanium Server]
+	[Core Titanium Server Capabilities]
+	[Supported OpenStack Features]
+		- restful APIs 
+	[Virtual Applications]
+
+[planning]
+	[Introduction]
+	[Deployment Options]
+		- Titanium Server in Multi-Region
+			1. Titanium Server as Primary and Secondary Region
+			2. Third-Party OpenStack Cloud as Primiary Region and TiS as Secondary Region.
+	[Network Planning]
+	[Storage Planning]
+		- Controller storage
+			- Primary disk: database, image, backup, ceph monitor
+			- Secondary disk: volume
+		- Storage 
+			- OSD -> Ceph transaction journal
+	[Installation and Resource Planning]

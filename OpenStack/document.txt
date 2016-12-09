@@ -1,0 +1,5 @@
+[general rule]
+
+
+http://specs.openstack.org/openstack/api-wg/guidelines/api-docs.html
+http://www.sphinx-doc.org/en/1.4.8/tutorial.html

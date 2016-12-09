@@ -1,0 +1,5 @@
+[introduction]
+	Server-side scripting. (PHP parser(CGI or server module), web server, web browser)
+		- Web server: Microsoft Internet Information Server(IIS)
+	Command line scripting.
+	Writing desktop applications.

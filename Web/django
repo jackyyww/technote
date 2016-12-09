@@ -1,0 +1,55 @@
+[management command]
+django-admin startproject <project_name>
+python manage.py runserver 0.0.0.0:8000
+python manage.py startapp <app_name>
+
+python manage.py migrate
+python manage.py makemigrations <app_name>
+python manage.py sqlmigrate <app_name> <migration_id>
+
+python manage.py shell
+
+python manage.py createsuperuser
+
+[Projects vs. apps]
+An app is a Web application that does something – e.g., a Weblog system, a database of public records or a simple poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.
+
+
+
+
+
+
+
+Production: 
+	- use Apache with mod_wsgi (embeded mode / daemon mode)
+[Installation]
+	- python -c "import django; print(django.__path__)"
+[Database] MySQL, SQLite, Oracle, PostgreSQL
+[Models and databases]
+	[Models] 
+		- django.db.models.Model
+
+
+[django.models]
+	- Field
+	- Relationship 
+		- many-to-one  : django.db.models.ForeignKey
+		- many-to-many : django.db.models.ManyToManyField  (intermedicate model)
+		- one-to-one   : django.db.models.OneToOneField
+	- Manager (by default objects, only accessible via model classes)
+	- Customize predefined model methods
+		- Abstract base classes (be careful for related_name and related_query_name)
+
+[django.urls]
+	- ROOT_URLCONF
+	- namespace: application + instance
+
+[django.process]
+	[settings]
+		- DJANGO_SETTINGS_MODULE
+		- django/conf/global_settings.py
+		- python manage.py diffsettings
+		- from django.conf import settings
+	[applications]
+
+[django.db.migrations]

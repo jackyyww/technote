@@ -1,0 +1,26 @@
+[Chapter 2]
+source code -> byte code (platform-independent, *.pyc, only for import)
+[chapter 4]
+	- Numbers: math, random
+	- Strings
+
+[Part IV. Functions and Generators]
+[Function Basics]
+  	- def (executable code, create function object)
+  	- lambda (create an object but returns it as a result)
+  	- return & yield
+  	- global & nonlocal(3.x for enclosing def statement)
+	- Python code is not supposed to care about specific data types.
+
+[Scopes]
+	-lexical scoping. (local, nonlocal(3.x), global)
+		- inside def : local to that function
+		- in an enclosing def: nonlocal to nested functions
+		- outside all defs: global to the entire file
+	- LEGB (Local-Enclosing-Global-Build-in)
+		-others: 
+			1. temporary loop variables in some comprehensions.
+			2. exception reference variables in some try handlers.
+			3. local scopes in class statements
+	- global
+	Q:(? Other Python scopes: Preview)

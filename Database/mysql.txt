@@ -1,0 +1,3 @@
+[user management]
+create user 'max'@'%' identified by 'nokia123';
+grant all privileges on *.* to 'max'@'%' with grant option;
